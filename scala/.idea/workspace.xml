@@ -60,8 +60,8 @@
       <file leaf-file-name="Part2.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/day5/Part2.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="437">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
               <folding>
                 <element signature="e#14#48#0" expanded="true" />
               </folding>
@@ -989,8 +989,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/day5/Part2.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="437">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding>
             <element signature="e#14#48#0" expanded="true" />
           </folding>

@@ -24,12 +24,10 @@ object Part2 {
     while (passcode.contains("_")) {
       val hash = md5(doorId + count)
       val posChar = hash.drop(5).take(1)
-      if (hash.startsWith("00000") && posCharIsValid(posChar)) {
+      if (hash.startsWith("00000") && posCharIsValid(posChar) && passcode.charAt(posChar.toInt) == '_') {
         val code = hash.drop(6).take(1)
-        if (passcode.charAt(posChar.toInt) == '_') {
-          passcode = passcode.split("").updated(posChar.toInt, code).mkString
-          println(passcode)
-        }
+        passcode = passcode.split("").updated(posChar.toInt, code).mkString
+        println(passcode)
       }
       count = count + 1
     }

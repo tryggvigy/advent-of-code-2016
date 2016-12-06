@@ -1,0 +1,8 @@
+It would have been MUCH more effective to do the md5 hashing in paralell on multiple cores. A guy did part2 in 1.1s, my solution takes 14min!
+
+This  is what enables the paralell hashing.
+https://simple.wikipedia.org/wiki/Avalanche_effect
+
+I wasn't happy with all the ifs I used in the scala code. Should have used options somehow. I also wanted to get rid of the while loop in favor of streams. Loops and conditionals are festering grounds of bugs...
+
+
