@@ -1,16 +1,20 @@
 package day5
 
 import org.scalatest.FlatSpec
+import day5.Part1.{md5, findPassCode}
 
-class Part1Test extends FlatSpec{
-  "An empty Set" should "have size 0" in {
-    assert(Set.empty.isEmpty)
+/*
+* - find 8 instances of passChar
+*   -
+**/
+
+class Part1Test extends FlatSpec {
+  "md5" should "hash the given string with md5" in {
+    assert(md5("abba") === "54A8723466E5D487247F3D93D51C66BC")
   }
 
-  it should "produce NoSuchElementException when head is invoked" in {
-    assertThrows[NoSuchElementException] {
-      Set.empty.head
-    }
+  "findPassCode" should "find our answer" in {
+    assert(findPassCode("ffykfhsq") === "C6697B55")
   }
 
 }
