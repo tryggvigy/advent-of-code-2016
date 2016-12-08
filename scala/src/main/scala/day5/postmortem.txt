@@ -3,6 +3,12 @@ It would have been MUCH more effective to do the md5 hashing in paralell on mult
 This  is what enables the paralell hashing.
 https://simple.wikipedia.org/wiki/Avalanche_effect
 
-I wasn't happy with all the ifs I used in the scala code. Should have used options somehow. I also wanted to get rid of the while loop in favor of streams. Loops and conditionals are festering grounds of bugs...
+I wasn't happy with all the ifs I used in the scala code.
+Should have used options somehow.
+I also wanted to get rid of the while loop in favor of streams.
+Loops and conditionals are festering grounds of bugs...
 
-
+UPDATE:
+posted on stack exchange code review and someone game a really good stream impl to do this.
+http://codereview.stackexchange.com/questions/149052/finding-a-passcode-by-comparing-md5-result/149174#149174
+I updated my code accordingly.

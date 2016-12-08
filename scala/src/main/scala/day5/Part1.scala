@@ -8,17 +8,13 @@ object Part1 extends App {
     MessageDigest.getInstance("MD5").digest(s.getBytes).map("%02X".format(_)).mkString
 
   def findPassCode(doorId: String): String = {
-    var passcode = ""
-    var count = 0
-
-    while (passcode.length < 8) {
-      val hash = md5(doorId + count)
-      if (hash.startsWith("00000")) passcode = passcode + hash.drop(5).take(1)
-      count = count + 1
-    }
-
-    passcode
+    Stream
+      .from(0)
+      .map(n => doorId + n)
+      .map(md5)
+      .filter(h => h.startsWith("00000"))
+      .map(h => h(5))
+      .take(8)
+      .mkString
   }
-
-
 }
